@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  fizz:
+    environment:
+      - ENVIRONMENT=dev
+    volumes:
+      - ./services/fizz.py:/services/fizz.py
+  buzz:
+    environment:
+      - ENVIRONMENT=dev
+    volumes:
+      - ./services/buzz.py:/services/buzz.py
+  number:
+    environment:
+      - ENVIRONMENT=dev
+    volumes:
+      - ./services/number.py:/services/number.py
+  main:
+    environment:
+      - ENVIRONMENT=dev
+    volumes:
+      - ./services/main.py:/services/main.py
+
+

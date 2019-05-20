@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  fizz:
+    build:
+      context: .
+    command: "fizz"
+  buzz:
+    build:
+      context: .
+    command: "buzz"
+  number:
+    build:
+      context: .
+    command: "number"
+  main:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    command: "main"
+
+
